@@ -136,4 +136,65 @@ nav .container a {
 }
 nav .container .nav__logo h3 {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .container button {
+    display: inline-block;
+    background: transparent;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav .container button#close__nav-btn {
+    display: none;
+  }
+  nav .container ul {
+    position: fixed;
+    right: 5%;
+    top: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    display: none;
+    perspective: 300px;
+  }
+  nav .container ul li {
+    width: 100%;
+    opacity: 0;
+    animation: flipNavItem 310ms ease forwards;
+    transform-origin: top;
+  }
+  nav .container ul li:nth-child(2) {
+    animation-delay: 150ms;
+  }
+  nav .container ul li:nth-child(3) {
+    animation-delay: 300ms;
+  }
+  nav .container ul li:nth-child(4) {
+    animation-delay: 450ms;
+  }
+  nav .container ul li:nth-child(5) {
+    animation-delay: 600ms;
+  }
+  @keyframes flipNavItem {
+    0% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  nav .container ul li a {
+    color: #ffffff;
+    height: 100%;
+    display: block;
+    padding: 1.5rem 2rem;
+    border-radius: 0;
+    background: linear-gradient(#4cc9f0, #14b8eb);
+  }
+  nav .container ul li a.btn {
+    background: #f72585;
+  }
 }/*# sourceMappingURL=style.css.map */
