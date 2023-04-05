@@ -27,6 +27,10 @@ body {
           user-select: none;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 50;
+}
+
 .container {
   width: 82%;
   margin: 0 auto;
@@ -277,6 +281,9 @@ header .container .header__content p {
 #services article i {
   font-size: 1.7rem;
 }
+#services article .material-symbols-outlined {
+  font-size: 1.8rem;
+}
 #services article div h4 {
   margin-bottom: 1rem;
 }
@@ -300,5 +307,107 @@ header .container .header__content p {
   }
   #services .container article div h4 {
     margin-bottom: 0.8rem;
+  }
+}
+#specialists .container {
+  width: 68%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+#specialists .container:hover {
+  box-shadow: none;
+}
+#specialists .container article {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: none;
+  position: relative;
+  transition: all 700ms ease;
+}
+#specialists .container article:hover {
+  box-shadow: 0.6rem 1.5rem 1.5rem rgba(12, 3, 27, 0.25), -0.6rem -0.8rem 1.5rem rgba(12, 3, 27, 0.25);
+}
+#specialists .container article:hover .specialist__image::before {
+  left: 0%;
+  border-radius: 1rem;
+}
+#specialists .container article:hover .specialist__socials {
+  opacity: 1;
+  visibility: visible;
+}
+#specialists .container article:hover .specialist__whatsapp {
+  opacity: 1;
+  visibility: visible;
+}
+#specialists .container article .specialist__image {
+  height: 20rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#specialists .container article .specialist__image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(135deg, rgba(72, 12, 168, 0.8), rgba(76, 201, 240, 0.85));
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+#specialists .container article .specialist__details {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+#specialists .container article .specialist__socials {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1.2rem;
+  right: 1.2rem;
+  gap: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 340ms ease;
+}
+#specialists .container article .specialist__socials a {
+  background: #ffffff;
+  color: #480ca8;
+  padding: 0.4rem;
+  display: flex;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  transition: all 400ms ease;
+}
+#specialists .container article .specialist__socials a:hover {
+  background: #480ca8;
+  color: #ffffff;
+}
+#specialists .container article .specialist__whatsapp {
+  background: #54eb72;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30%;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 240ms ease;
+}
+
+@media screen and (max-width: 1024px) {
+  #specialists .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  #specialists .container {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
