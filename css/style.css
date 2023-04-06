@@ -15,6 +15,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 6.2rem 0 0 0;
 }
 
 body {
@@ -382,8 +383,20 @@ header .container .header__content p {
   border-radius: 50%;
   transition: all 400ms ease;
 }
-#specialists .container article .specialist__socials a:hover {
-  background: #480ca8;
+#specialists .container article .specialist__socials .insta:hover {
+  background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+  color: #ffffff;
+}
+#specialists .container article .specialist__socials .fb:hover {
+  background: linear-gradient(90deg, #0f66e8, #4d04e0);
+  color: #ffffff;
+}
+#specialists .container article .specialist__socials .twitter:hover {
+  background: linear-gradient(to right, #1DA1F2, #1DA1F2 50%);
+  color: #ffffff;
+}
+#specialists .container article .specialist__socials .linked:hover {
+  background: linear-gradient(to right, #0091e0, #004891);
   color: #ffffff;
 }
 #specialists .container article .specialist__whatsapp {
@@ -398,7 +411,13 @@ header .container .header__content p {
   display: flex;
   opacity: 0;
   visibility: hidden;
-  transition: all 1s 240ms ease;
+  font-size: 1.1rem;
+  transition: all 1s 240ms ease, background 250ms ease-in, color 250ms ease-in, transform 500ms ease;
+}
+#specialists .container article .specialist__whatsapp:hover {
+  background: #ffffff;
+  color: #54eb72;
+  transform: translateX(-50%) translateY(-5px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -449,5 +468,66 @@ header .container .header__content p {
 @media screen and (max-width: 600px) {
   .swiper .swiper-wrapper .swiper-slide {
     padding: 1.5rem;
+  }
+}
+#appointment {
+  background: linear-gradient(-90deg, #aee3f2, rgb(213, 231, 231));
+}
+#appointment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+#appointment .container .info p {
+  margin: 0.5rem 0 2rem;
+}
+#appointment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info article small {
+  margin-top: 0.4rem;
+  display: block;
+}
+#appointment .container .info article .info__icon {
+  background: #f72585;
+  color: #ffffff;
+  padding: 0.8rem;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+#appointment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form__group label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form__group input, #appointment .container form .form__group select, #appointment .container form .form__group textarea {
+  background: #ffffff;
+  padding: 0.85rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #appointment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appointment .container .info h2, #appointment .container .info p {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

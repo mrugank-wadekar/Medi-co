@@ -86,11 +86,29 @@
                     border-radius: 50%;
                     transition: all 400ms ease;
 
-                    &:hover{
-                        background: $primary-color;
-                        color: $white-color;
+                   
+                }
 
-                    }
+                .insta:hover{
+                    //background: $primary-color;
+                    background: $insta-color;
+                    color: $white-color;
+
+                }
+
+                .fb:hover{
+                    background: $fb-color;
+                    color: $white-color;
+                }
+
+                .twitter:hover{
+                    background: $twitter-color;
+                    color: $white-color;
+                }
+
+                .linked:hover{
+                    background: $linked-color;
+                    color: $white-color;
                 }
             }
 
@@ -106,7 +124,14 @@
                 display: flex;
                 opacity:0;
                 visibility: hidden;
-                transition: all 1s 240ms ease;
+                font-size: 1.1rem;
+                transition: all 1s 240ms ease, background 250ms  ease-in,color  250ms ease-in,transform 500ms ease;
+
+                &:hover{
+                    background: $white-color;
+                    color:$success-color;
+                    transform: translateX(-50%) translateY(-5px);
+                }
             }
 
         

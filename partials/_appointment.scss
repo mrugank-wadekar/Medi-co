@@ -1,0 +1,85 @@
+#appointment{
+    background:linear-gradient(-90deg,#aee3f2,rgb(213, 231, 231));
+    //background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+
+
+    .container{
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap:6%;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+
+        .info{
+
+            //box-shadow: 1rem 1rem 19px rgba(167, 166, 166, 0.9),-1rem 1rem 19px rgba(167, 166, 166, 0.9);
+            p{
+                margin:0.5rem 0 2rem;
+            }
+
+            article{
+                display: flex;
+                gap:1.5rem;
+                margin-bottom: 1.5rem;
+
+                small{
+                    margin-top: 0.4rem;
+                    display: block;
+                }
+
+                .info__icon{
+                    background: $secondary-color;
+                    color:$white-color;
+                    padding: 0.8rem;
+                    display: flex;
+                    height:fit-content;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:1.4rem;
+            //box-shadow: 1rem 1rem 19px rgba(167, 166, 166, 0.9),-1rem 1rem 19px rgba(167, 166, 166, 0.9);
+
+            .form__group{
+                label{
+                    font-size: 0.8rem;
+                    margin-bottom: 0.4rem;
+                    display: inline-block;
+                    font-weight: 600;
+                }
+
+                input,select,textarea{
+                    background:$white-color;
+                    padding: 0.85rem 1rem;
+                    display: block;
+                    width: 100%;
+                    border-radius: 0.4rem;
+                    resize: none;
+                }
+            }
+        }
+
+    }
+}
+
+// MEDIA QUERIES
+// SMALL  DEVICES
+@media screen and (max-width:1024px){
+    #appointment{
+        .container{
+            grid-template-columns: 1fr;
+            gap:2rem;
+
+            .info{
+                h2,p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
