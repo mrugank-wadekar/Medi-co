@@ -7,6 +7,7 @@
         margin-bottom: 3.5rem;
         .slide{
             width:32%;
+            height: 12rem;
             margin-right: 2%;
             @include gradientBackground;
             padding:1.5rem 2rem;
@@ -15,6 +16,7 @@
             font-size: 0.9rem;
 
             p{
+                height: 60%;
                 margin-bottom: 1.5rem;
             }
             
@@ -46,7 +48,7 @@
     .swiper{
         .slideshow{
             .slide{
-                width:65%;
+                width:60%;
                 margin-right: 2%;
                 padding:1.5rem;
             }
