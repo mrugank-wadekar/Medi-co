@@ -14,7 +14,7 @@ const closeNav = () => {
     closeNavBtn.style.display='none';
 }
 
-
+closeNavBtn.addEventListener("click",closeNav);
 
 //close nav menu on smaller screens when a section is clicked
 if (window.innerWidth < 1024) {
@@ -41,6 +41,11 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
+
+    autoplay: {
+        delay: 2100,
+        disableOnInteraction: false,
+      },
 
     //Responsive Breakpoints
     breakpoints :{
