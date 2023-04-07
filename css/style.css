@@ -342,6 +342,9 @@ header .container .header__content p {
   #services .container article:hover {
     margin: 0;
   }
+  #services .container #ser-5:hover, #services .container #ser-6:hover {
+    transform: translateY(0.5rem);
+  }
 }
 @media screen and (max-width: 600px) {
   #services .container {

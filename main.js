@@ -27,6 +27,128 @@ if (window.innerWidth < 1024) {
   }
   
 
+//Tab hover effects for services section
+const ser1 = document.getElementById('ser-1');
+const ser2 = document.getElementById('ser-2');
+const ser3 = document.getElementById('ser-3');
+const ser4 = document.getElementById('ser-4');
+const ser5 = document.getElementById('ser-5');
+const ser6 = document.getElementById('ser-6');
+
+let ogser1=ser1.style.transform;
+let ogser2=ser2.style.transform;
+let ogser3=ser3.style.transform;
+let ogser4=ser4.style.transform;
+let ogser5=ser5.style.transform;
+let ogser6=ser6.style.transform;
+if(window.innerWidth <1034 && window.innerWidth >=610){
+  
+  ser3.addEventListener('mouseover',()=>{
+    ser1.style.transform='translateY(-1rem)';
+  })
+
+  ser3.addEventListener('mouseout',()=>{
+    ser1.style.transform=ogser1;
+  })
+
+  ser3.addEventListener('mouseover',()=>{
+    ser5.style.transform='translateY(0.6rem)';
+  })
+
+  ser3.addEventListener('mouseout',()=>{
+    ser5.style.transform=ogser5;
+  })
+
+  // 4th article
+  ser4.addEventListener('mouseover',()=>{
+    ser2.style.transform='translateY(-1rem)';
+  })
+
+  ser4.addEventListener('mouseout',()=>{
+    ser2.style.transform=ogser2;
+  })
+
+  ser4.addEventListener('mouseover',()=>{
+    ser6.style.transform='translateY(0.6rem)';
+  })
+
+  ser4.addEventListener('mouseout',()=>{
+    ser6.style.transform=ogser6;
+  })
+
+}
+
+//Mobile hover effects for services section
+
+if(window.innerWidth<610){
+
+  ser2.addEventListener("mouseover",()=>{
+    ser1.style.transform='translateY(-1.4rem)';
+    ser3.style.transform='translateY(1rem)';
+    ser4.style.transform='translateY(1rem)';
+    ser5.style.transform='translateY(1rem)';
+    ser6.style.transform='translateY(1rem)';
+  })
+
+  ser2.addEventListener("mouseout",()=>{
+    ser1.style.transform=ogser1;
+    ser3.style.transform=ogser3;
+    ser4.style.transform=ogser4;
+    ser5.style.transform=ogser5;
+    ser6.style.transform=ogser6;
+  })
+
+  ser3.addEventListener("mouseover",()=>{
+    ser1.style.transform='translateY(-1.4rem)';
+    ser2.style.transform='translateY(-1.4rem)';
+    ser4.style.transform='translateY(1rem)';
+    ser5.style.transform='translateY(1rem)';
+    ser6.style.transform='translateY(1rem)';
+  })
+
+  ser3.addEventListener("mouseout",()=>{
+    ser1.style.transform=ogser1;
+    ser2.style.transform=ogser2;
+    ser4.style.transform=ogser4;
+    ser5.style.transform=ogser5;
+    ser6.style.transform=ogser6;
+  })
+
+  ser4.addEventListener("mouseover",()=>{
+    ser1.style.transform='translateY(-1.4rem)';
+    ser2.style.transform='translateY(-1.4rem)';
+    ser3.style.transform='translateY(-1.4rem)';
+    ser5.style.transform='translateY(1rem)';
+    ser6.style.transform='translateY(1rem)';
+  })
+
+  ser4.addEventListener("mouseout",()=>{
+    ser1.style.transform=ogser1;
+    ser2.style.transform=ogser2;
+    ser3.style.transform=ogser3;
+    ser5.style.transform=ogser5;
+    ser6.style.transform=ogser6;
+  })
+
+  ser5.addEventListener("mouseover",()=>{
+    ser1.style.transform='translateY(-1.4rem)';
+    ser2.style.transform='translateY(-1.4rem)';
+    ser3.style.transform='translateY(-1.4rem)';
+    ser4.style.transform='translateY(-1.4rem)';
+    ser6.style.transform='translateY(1rem)';
+  })
+
+  ser5.addEventListener("mouseout",()=>{
+    ser1.style.transform=ogser1;
+    ser2.style.transform=ogser2;
+    ser3.style.transform=ogser3;
+    ser4.style.transform=ogser4;
+    ser6.style.transform=ogser6;
+  })
+
+  
+}
+
 //Adding text on mobile devices for hover effects on specialists
 if (window.innerWidth < 1030 || 'ontouchstart' in window) {
   const tapMessage =document.querySelector("#tap-message");
@@ -35,19 +157,19 @@ if (window.innerWidth < 1030 || 'ontouchstart' in window) {
   tapMessage.innerText = temp +"\n" + temp2;
   console.log(temp,temp2);
 }
+const mob2 = document.getElementById('mob-2');
+const mob1 = document.getElementById('mob-1');
+const mob3 = document.getElementById('mob-3');
+const mob4 = document.getElementById('mob-4');
+
+let ogmob1= mob1.style.transform;
+let ogmob2= mob2.style.transform;
+let ogmob3= mob3.style.transform;
+let ogmob4= mob4.style.transform;
 
   //Mobile hover effects for specialist section
   if(window.innerWidth <610){
-  const mob2 = document.getElementById('mob-2');
-  const mob1 = document.getElementById('mob-1');
-  const mob3 = document.getElementById('mob-3');
-  const mob4 = document.getElementById('mob-4');
 
-  let ogmob1= mob1.style.transform;
-  let ogmob2= mob2.style.transform;
-  let ogmob3= mob3.style.transform;
-  let ogmob4= mob4.style.transform;
-  
   mob2.addEventListener('mouseover', () => {
     mob1.style.transform = 'translateY(-1.5rem)';
   });
@@ -79,12 +201,8 @@ if (window.innerWidth < 1030 || 'ontouchstart' in window) {
   mob3.addEventListener('mouseout', () => {
     mob2.style.transform = ogmob2;
   });
-
-
-
 }
-  
-
+ 
 //change navbar color on scroll
 
 window.addEventListener("scroll",()=>{
