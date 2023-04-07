@@ -369,6 +369,7 @@ header .container .header__content p {
 }
 #specialists .container article:hover {
   box-shadow: 0.6rem 1.5rem 1.5rem rgba(12, 3, 27, 0.25), -0.6rem -0.8rem 1.5rem rgba(12, 3, 27, 0.25);
+  transform: translateY(-0.6rem);
 }
 #specialists .container article:hover .specialist__image::before {
   left: 0%;
@@ -465,10 +466,19 @@ header .container .header__content p {
   #specialists .container {
     grid-template-columns: repeat(2, 1fr);
   }
+  #specialists .container .tab-down:hover {
+    transform: translateY(0.6rem);
+  }
 }
 @media screen and (max-width: 600px) {
   #specialists .container {
     grid-template-columns: 1fr;
+  }
+  #specialists .container #mob-1:hover {
+    transform: translateY(-0.7rem);
+  }
+  #specialists .container #mob-4:hover {
+    transform: translateY(0.7rem);
   }
 }
 .swiper {
