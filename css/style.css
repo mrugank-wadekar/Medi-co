@@ -329,8 +329,39 @@ header .container .header__content p {
 #services .container article div h4 {
   margin-bottom: 1rem;
 }
+#services .bg__blob2 {
+  position: absolute;
+  z-index: -2;
+  left: 34rem;
+  top: 62rem;
+  transform: scale(2.5);
+  transform-origin: 50% 50%;
+}
+@keyframes move {
+  0% {
+    transform: scale(2.2) translate(10px, -50px);
+  }
+  38% {
+    transform: scale(1.4, 1.6) translate(40vw, 20vh) rotate(160deg);
+  }
+  40% {
+    transform: scale(1.4, 1.6) translate(40vw, 20vh) rotate(160deg);
+  }
+  78% {
+    transform: scale(1.9) translate(0vw, 18vh) rotate(-40deg);
+  }
+  80% {
+    transform: scale(1.9) translate(0vw, 18vh) rotate(-40deg);
+  }
+  100% {
+    transform: scale(2.2) translate(10px, -50px);
+  }
+}
 
 @media screen and (max-width: 1024px) {
+  #services {
+    overflow-x: hidden;
+  }
   #services .container {
     gap: 1.1rem;
     grid-template-columns: 1fr 1fr;
@@ -345,20 +376,87 @@ header .container .header__content p {
   #services .container #ser-5:hover, #services .container #ser-6:hover {
     transform: translateY(0.5rem);
   }
+  #services .bg__blob2 {
+    position: absolute;
+    z-index: -2;
+    left: 1rem;
+    top: 60rem;
+    transform: scale(1.4);
+    animation: move2 24s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes move2 {
+    0% {
+      transform: scale(2.1) translate(10vw, 5vh);
+    }
+    38% {
+      transform: scale(1.3, 1.6) translate(30vw, 10vh) rotate(160deg);
+    }
+    40% {
+      transform: scale(1.3, 1.6) translate(30vw, 10vh) rotate(160deg);
+    }
+    78% {
+      transform: scale(1.9) translate(20vw, 12vh) rotate(-40deg);
+    }
+    80% {
+      transform: scale(1.9) translate(20vw, 12vh) rotate(-40deg);
+    }
+    100% {
+      transform: scale(2.1) translate(10vq, 5vh);
+    }
+  }
 }
 @media screen and (max-width: 600px) {
+  #services {
+    overflow-y: hidden;
+  }
   #services .container {
     grid-template-columns: 1fr;
+    overflow-y: hidden;
   }
   #services .container article div h4 {
     margin-bottom: 0.8rem;
   }
+  #services .bg__blob2 {
+    position: absolute;
+    z-index: -2;
+    left: 1rem;
+    top: 80rem;
+    transform: scale(1.4);
+    animation: move2 24s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes move2 {
+    0% {
+      transform: scale(1) translate(10px, -50px);
+    }
+    38% {
+      transform: scale(1.1, 1.3) translate(15vw, 40vh) rotate(160deg);
+    }
+    40% {
+      transform: scale(1.1, 1.3) translate(15vw, 40vh) rotate(160deg);
+    }
+    78% {
+      transform: scale(1.4) translate(5vw, 22vh) rotate(-40deg);
+    }
+    80% {
+      transform: scale(1.4) translate(5vw, 22vh) rotate(-40deg);
+    }
+    100% {
+      transform: scale(1) translate(10px, -50px);
+    }
+  }
+}
+#specialists {
+  position: relative;
+  height: 100%;
 }
 #specialists .container {
   width: 68%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-bottom: 1rem;
 }
 #specialists .container:hover {
   box-shadow: none;
@@ -464,24 +562,92 @@ header .container .header__content p {
   color: #54eb72;
   transform: translateX(-50%) translateY(-5px);
 }
+#specialists .bg__blob {
+  position: absolute;
+  z-index: -2;
+  left: 20%;
+  top: 29%;
+  transform: scale(2.4);
+  animation: move 26s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes move {
+  0% {
+    transform: scale(2.2) translate(10px, -50px);
+  }
+  38% {
+    transform: scale(1.4, 1.6) translate(28vw, 20vh) rotate(160deg);
+  }
+  40% {
+    transform: scale(1.4, 1.6) translate(28vw, 20vh) rotate(160deg);
+  }
+  78% {
+    transform: scale(1.9) translate(0vw, 18vh) rotate(-40deg);
+  }
+  80% {
+    transform: scale(1.9) translate(0vw, 18vh) rotate(-40deg);
+  }
+  100% {
+    transform: scale(2.2) translate(10px, -50px);
+  }
+}
 
 @media screen and (max-width: 1024px) {
+  #specialists {
+    overflow-x: hidden;
+  }
   #specialists .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #specialists .container #mob-4, #specialists .container #mob-3 {
+    margin-bottom: 1.2rem;
   }
   #specialists .container .tab-down:hover {
     transform: translateY(0.6rem);
   }
 }
 @media screen and (max-width: 600px) {
+  #specialists {
+    overflow: hidden;
+  }
   #specialists .container {
     grid-template-columns: 1fr;
   }
   #specialists .container #mob-1:hover {
     transform: translateY(-0.7rem);
   }
+  #specialists .container #mob-4 {
+    margin-bottom: 1.2rem;
+  }
   #specialists .container #mob-4:hover {
     transform: translateY(0.7rem);
+  }
+  #specialists .bg__blob {
+    position: absolute;
+    z-index: -2;
+    transform: scale(1);
+    animation: move 22s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+  @keyframes move {
+    0% {
+      transform: scale(1.8) translate(10px, -50px);
+    }
+    38% {
+      transform: scale(1.2, 1.4) translate(20vw, 35vh) rotate(160deg);
+    }
+    40% {
+      transform: scale(1.2, 1.4) translate(20vw, 35vh) rotate(160deg);
+    }
+    78% {
+      transform: scale(1.6) translate(5vw, 55vh) rotate(-40deg);
+    }
+    80% {
+      transform: scale(1.6) translate(5vw, 55vh) rotate(-40deg);
+    }
+    100% {
+      transform: scale(1.8) translate(10px, -50px);
+    }
   }
 }
 .swiper {
