@@ -455,10 +455,12 @@ header .container .header__content p {
 .swiper {
   width: 82%;
 }
-.swiper .swiper-wrapper {
+.swiper .slideshow {
   margin-bottom: 3.5rem;
 }
-.swiper .swiper-wrapper .swiper-slide {
+.swiper .slideshow .slide {
+  width: 32%;
+  margin-right: 2%;
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
   padding: 1.5rem 2rem;
@@ -466,18 +468,18 @@ header .container .header__content p {
   cursor: default;
   font-size: 0.9rem;
 }
-.swiper .swiper-wrapper .swiper-slide h1, .swiper .swiper-wrapper .swiper-slide h2, .swiper .swiper-wrapper .swiper-slide h3, .swiper .swiper-wrapper .swiper-slide h4, .swiper .swiper-wrapper .swiper-slide h5 {
+.swiper .slideshow .slide h1, .swiper .slideshow .slide h2, .swiper .slideshow .slide h3, .swiper .slideshow .slide h4, .swiper .slideshow .slide h5 {
   color: #ffffff;
 }
-.swiper .swiper-wrapper .swiper-slide p {
+.swiper .slideshow .slide p {
   margin-bottom: 1.5rem;
 }
-.swiper .swiper-wrapper .swiper-slide .patient {
+.swiper .slideshow .slide .patient {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.swiper .swiper-wrapper .swiper-slide .patient .avatar {
+.swiper .slideshow .slide .patient .avatar {
   width: 2.5rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -487,8 +489,17 @@ header .container .header__content p {
   background: #480ca8;
 }
 
-@media screen and (max-width: 600px) {
-  .swiper .swiper-wrapper .swiper-slide {
+@media screen and (max-width: 1024px) {
+  .swiper .slideshow .slide {
+    width: 65%;
+    margin-right: 2%;
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  .swiper .slideshow .slide {
+    width: 92%;
+    margin-right: 2%;
     padding: 1.5rem;
   }
 }

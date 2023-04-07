@@ -2,11 +2,12 @@
     
     width:$container-lg;
 
-
-    .swiper-wrapper{
+    .slideshow{
         //adds space below the wrapper (between the wrapper and pagination)
         margin-bottom: 3.5rem;
-        .swiper-slide{
+        .slide{
+            width:32%;
+            margin-right: 2%;
             @include gradientBackground;
             padding:1.5rem 2rem;
             border-radius: 1rem;
@@ -40,11 +41,27 @@
     }
 }
 
-//  media queries for small devices
-@media screen and (max-width:600px){
+//  media queries for med devices
+@media screen and (max-width:1024px){
     .swiper{
-        .swiper-wrapper{
-            .swiper-slide{
+        .slideshow{
+            .slide{
+                width:65%;
+                margin-right: 2%;
+                padding:1.5rem;
+            }
+        }
+    }
+
+}
+
+//  media queries for small devices
+@media screen and (max-width:610px){
+    .swiper{
+        .slideshow{
+            .slide{
+                width:92%;
+                margin-right: 2%;
                 padding:1.5rem;
             }
         }
