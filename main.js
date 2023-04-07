@@ -14,18 +14,18 @@ const closeNav = () => {
     closeNavBtn.style.display='none';
 }
 
-closeNavBtn.addEventListener("click",closeNav);
+
 
 //close nav menu on smaller screens when a section is clicked
-if(window.innerWidth<1024){
-    const navButtons=document.querySelectorAll('#nav__items li a');
-    navButtons.forEach(item=>{
-        item.addEventListener("click",()=>{
-            closeNav();
-        })
-    }
-    )
-}
+if (window.innerWidth < 1024) {
+    const navButtons = document.querySelectorAll('#nav__items li a');
+    navButtons.forEach(item => {
+      item.addEventListener("click", () => {
+        closeNav();
+      });
+    });
+  }
+  
 
 //change navbar color on scroll
 
@@ -59,17 +59,3 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
   });
-
-  //Clear form fields after it has been submitted once
-// const form = document.querySelector('#appointment-form');
-
-// form.addEventListener('submit', (event) => {
-//   //event.preventDefault(); // prevent the form from submitting
-
-//   // perform your form submission logic here
-
-//   form.reset(); // reset the form fields
-// });
-
-
-
