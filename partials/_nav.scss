@@ -7,10 +7,40 @@ nav{
     place-items: center;
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
     @include gradientBackground();
+
+
+    &.window-scroll{
+        //navbar scroll color to white
+        background: linear-gradient(rgb(229, 229, 229),rgb(214, 214, 214));
+        
+        .container{
+            button{
+                color:black;
+            }
+
+            a{
+                color: black;
+                font-size: 1.01rem;
+                //font-weight: 450;
+            
+
+            & > h3 {
+                color:black;
+            }
+
+            &.btn{
+                color: $white-color;
+            }
+        }
+        }
+    }
+
+
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     
         ul{
             display: flex;
@@ -26,7 +56,7 @@ nav{
         a{
             color:$white-color;
             font-weight: 400;
-            font-size: 0.9rem;
+            font-size: 1.01rem;
         }
         .nav__logo h3 {
             color:$white-color;
@@ -35,9 +65,26 @@ nav{
     }
 }
 
+
+
+
 //  media queries for medium devices
 @media screen and (max-width:1024px){
     nav{
+        &.window-scroll{
+            //navbar scroll color to white
+            background: $white-color;
+            .container{
+                    button{
+                    color:$black-color;
+                    }
+
+                    a{
+                        color: $white-color;
+                    }
+                }
+        }
+
         .container{
             
             button{
