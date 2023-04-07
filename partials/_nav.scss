@@ -24,6 +24,9 @@ nav{
                 //font-weight: 450;
             
 
+            
+            
+
             & > h3 {
                 color:black;
             }
@@ -54,13 +57,27 @@ nav{
         }
 
         a{
-            color:$white-color;
+            color:rgb(224, 224, 224);
             font-weight: 400;
             font-size: 1.01rem;
+            transition: all 400ms ease;
+
+        }
+
+        a:hover{
+            color:$white-color;
         }
         .nav__logo h3 {
             color:$white-color;
+            transition: all 400ms ease;
+
+            &:hover{
+                transform: translateY(-0.2rem);
+            }
         }
+
+
+
 
     }
 }

@@ -85,8 +85,6 @@
                     font-size: 0.8rem;
                     border-radius: 50%;
                     transition: all 400ms ease;
-
-                   
                 }
 
                 .insta:hover{
@@ -145,6 +143,7 @@
 // TAB AND MEDIUM DEVICES
 @media screen and (max-width:1024px){
     #specialists{
+
         .container{
             grid-template-columns: repeat(2,1fr);
         }
@@ -153,7 +152,7 @@
 }
 
 // MEDIA QUERIES
-// PHOME AND SMALL DEVICES
+// PHONE AND SMALL DEVICES
 @media screen and (max-width:600px){
     #specialists{
         .container{

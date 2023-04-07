@@ -27,6 +27,15 @@ if (window.innerWidth < 1024) {
   }
   
 
+//Adding text on mobile devices for hover effects on specialists
+if (window.innerWidth < 1030 || 'ontouchstart' in window) {
+  const tapMessage =document.querySelector("#tap-message");
+  let temp=tapMessage.innerText;
+  let temp2="Tap on the profiles below to connect with them";
+  tapMessage.innerText = temp +"\n" + temp2;
+  console.log(temp,temp2);
+}
+
 //change navbar color on scroll
 
 window.addEventListener("scroll",()=>{
@@ -64,3 +73,6 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
   });
+
+
+  
