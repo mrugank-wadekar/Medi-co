@@ -1,9 +1,18 @@
 header{
     @include gradientBackground;
+    background-image: url('../assets/head2.svg');
+    background-repeat: no-repeat;
+    background-position: 15% 0;
+    background-size: 282.1rem;
+    padding-bottom: 2rem;
+
+    //transform: scaleY(-1);
     height:100vh;
     display: grid;
     place-items: center;
-    overflow: hidden;
+    //overflow: hidden;
+    //border-bottom-left-radius: 20px;
+    // border-bottom-right-radius: 30%;
 
     .container{
         margin-top: 3rem;
@@ -37,6 +46,8 @@ header{
 @media screen and (max-width:1024px){
     header{
         height:60vh;
+        background-size: 235.1rem;
+        padding-bottom: 1rem;
         
         .container{
             padding-top: 0.8rem;
@@ -56,6 +67,8 @@ header{
     header{
         height: 100vh;
         padding-top: 3rem;
+        background-size: 305rem;
+        padding-bottom: 1.2rem;
 
         .container{
             grid-template-columns: 1fr;

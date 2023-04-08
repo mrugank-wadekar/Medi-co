@@ -8,28 +8,28 @@
     background-repeat:no-repeat;
     background-size:  $bg-size;
     background-position: center;
-    animation: background-position 55s ease-in-out infinite alternate;
+    animation: background-position 95s ease-in-out infinite alternate;
 
     @keyframes background-position {
         0% {
             background-position: 50% 10%;
-            background-size:  $bg-size;
+            //background-size:  $bg-size;
           }
           25% {
             background-position: 50% 25%;
-            background-size:  $bg-size + 2rem;
+            //background-size:  $bg-size + 0.5rem;
           }
           50% {
-            background-position: 80% 80%;
-            background-size: $bg-size + 3rem;
+            background-position: 70% 50%;
+            //background-size: $bg-size + 0.6rem;
           }
           75% {
-            background-position: 25% 75%;
-            background-size: $bg-size + 2.5rem;
+            background-position: 65% 55%;
+            //background-size: $bg-size + 0.5rem;
           }
           100% {
             background-position: 50% 50%;
-            background-size: $bg-size + 0.5rem;
+            //background-size: $bg-size + 0.5rem;
           }
       }
 
@@ -198,28 +198,28 @@
 @media screen and (max-width:1024px){
     #specialists{
         //overflow-x: hidden;
-        animation: background-position 35s ease-in-out infinite alternate;
+        animation: background-position 65s ease-in-out infinite alternate;
         $bg-size:38rem;
     @keyframes background-position {
         0% {
             background-position: 50% 10%;
-            background-size:  $bg-size;
+            //background-size:  $bg-size;
           }
           25% {
             background-position: 50% 25%;
-            background-size:  $bg-size + 2rem;
+            //background-size:  $bg-size + 2rem;
           }
           50% {
             background-position: 80% 80%;
-            background-size: $bg-size + 3rem;
+            //background-size: $bg-size + 3rem;
           }
           75% {
             background-position: 25% 75%;
-            background-size: $bg-size + 2.5rem;
+            //background-size: $bg-size + 2.5rem;
           }
           100% {
             background-position: 50% 50%;
-            background-size: $bg-size + 0.5rem;
+            //background-size: $bg-size + 0.5rem;
           }
       }
         .container{
@@ -248,27 +248,27 @@
         
         background-repeat:space;
         animation: background-position 65s ease-in-out infinite alternate;
-        $bg-size:30rem;
+        $bg-size:28rem;
     @keyframes background-position {
         0% {
             background-position: 50% 25%;
-            background-size:  $bg-size;
+            //background-size:  $bg-size;
           }
           25% {
             background-position: 50% 25%;
-            background-size:  $bg-size + 2rem;
+            //background-size:  $bg-size + 2rem;
           }
           50% {
-            background-position: 80% 80%;
-            background-size: $bg-size + 3rem;
+            background-position: 60% 40%;
+            //background-size: $bg-size + 3rem;
           }
           75% {
-            background-position: 35% 75%;
-            background-size: $bg-size + 2.5rem;
+            background-position: 45% 60%;
+            //background-size: $bg-size + 2.5rem;
           }
           100% {
-            background-position: 40% 40%;
-            background-size: $bg-size + 0.5rem;
+            background-position: 50% 40%;
+            //background-size: $bg-size + 0.5rem;
           }
       }
         .container{

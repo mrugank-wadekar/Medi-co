@@ -249,10 +249,14 @@ nav .container .nav__logo h3:hover {
 header {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
+  background-image: url("../assets/head2.svg");
+  background-repeat: no-repeat;
+  background-position: 15% 0;
+  background-size: 282.1rem;
+  padding-bottom: 2rem;
   height: 100vh;
   display: grid;
   place-items: center;
-  overflow: hidden;
 }
 header h1, header h2, header h3, header h4, header h5 {
   color: #ffffff;
@@ -278,6 +282,8 @@ header .container .header__content p {
 @media screen and (max-width: 1024px) {
   header {
     height: 60vh;
+    background-size: 235.1rem;
+    padding-bottom: 1rem;
   }
   header .container {
     padding-top: 0.8rem;
@@ -291,6 +297,8 @@ header .container .header__content p {
   header {
     height: 100vh;
     padding-top: 3rem;
+    background-size: 305rem;
+    padding-bottom: 1.2rem;
   }
   header .container {
     grid-template-columns: 1fr;
@@ -302,7 +310,8 @@ header .container .header__content p {
   background-repeat: no-repeat;
   background-size: 36rem;
   background-position: center;
-  animation: background-position 10s ease-in-out infinite alternate;
+  animation: background-position 80s ease-in-out infinite alternate;
+  margin-top: 4rem;
 }
 @keyframes background-position {
   0% {
@@ -386,6 +395,7 @@ header .container .header__content p {
 @media screen and (max-width: 1024px) {
   #services {
     background-size: 25rem;
+    margin-top: 0rem;
   }
   #services .container {
     gap: 1.1rem;
@@ -433,8 +443,10 @@ header .container .header__content p {
 }
 @media screen and (max-width: 600px) {
   #services {
+    margin-top: 3.1rem;
+    background-size: auto;
     background-repeat: space;
-    animation: background-position 10s ease-in-out infinite alternate;
+    animation: background-position 65s ease-in-out infinite alternate;
   }
   @keyframes background-position {
     0% {
@@ -487,28 +499,23 @@ header .container .header__content p {
   background-repeat: no-repeat;
   background-size: 30rem;
   background-position: center;
-  animation: background-position 55s ease-in-out infinite alternate;
+  animation: background-position 95s ease-in-out infinite alternate;
 }
 @keyframes background-position {
   0% {
     background-position: 50% 10%;
-    background-size: 30rem;
   }
   25% {
     background-position: 50% 25%;
-    background-size: 32rem;
   }
   50% {
-    background-position: 80% 80%;
-    background-size: 33rem;
+    background-position: 70% 50%;
   }
   75% {
-    background-position: 25% 75%;
-    background-size: 32.5rem;
+    background-position: 65% 55%;
   }
   100% {
     background-position: 50% 50%;
-    background-size: 30.5rem;
   }
 }
 #specialists .container {
@@ -654,28 +661,23 @@ header .container .header__content p {
 
 @media screen and (max-width: 1024px) {
   #specialists {
-    animation: background-position 35s ease-in-out infinite alternate;
+    animation: background-position 65s ease-in-out infinite alternate;
   }
   @keyframes background-position {
     0% {
       background-position: 50% 10%;
-      background-size: 38rem;
     }
     25% {
       background-position: 50% 25%;
-      background-size: 40rem;
     }
     50% {
       background-position: 80% 80%;
-      background-size: 41rem;
     }
     75% {
       background-position: 25% 75%;
-      background-size: 40.5rem;
     }
     100% {
       background-position: 50% 50%;
-      background-size: 38.5rem;
     }
   }
   #specialists .container {
@@ -696,23 +698,18 @@ header .container .header__content p {
   @keyframes background-position {
     0% {
       background-position: 50% 25%;
-      background-size: 30rem;
     }
     25% {
       background-position: 50% 25%;
-      background-size: 32rem;
     }
     50% {
-      background-position: 80% 80%;
-      background-size: 33rem;
+      background-position: 60% 40%;
     }
     75% {
-      background-position: 35% 75%;
-      background-size: 32.5rem;
+      background-position: 45% 60%;
     }
     100% {
-      background-position: 40% 40%;
-      background-size: 30.5rem;
+      background-position: 50% 40%;
     }
   }
   #specialists .container {
@@ -810,7 +807,8 @@ header .container .header__content p {
   }
 }
 #appointment {
-  background: linear-gradient(-90deg, #aee3f2, rgb(213, 231, 231));
+  background-image: url("../assets/bg4.svg");
+  background-size: cover;
 }
 #appointment .container {
   display: grid;

@@ -1,5 +1,13 @@
 #appointment{
-    background:linear-gradient(-90deg,#aee3f2,rgb(213, 231, 231));
+    //background:linear-gradient(-90deg,#aee3f2,rgb(213, 231, 231));
+    //background: linear-gradient(-90deg, #aee3f2, rgb(213, 231, 231));  
+    //background: linear-gradient(-90deg, #aee3f2, rgb(213, 231, 231)), url('../assets/bg5.svg');
+
+    background-image: url('../assets/bg4.svg'); 
+ 
+    //background-repeat:no-repeat;
+    background-size:  cover;
+    //background-position: center;
     //background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
 
 

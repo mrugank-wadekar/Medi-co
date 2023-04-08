@@ -1,8 +1,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;" transform="rotate(155)">
                         <defs>
                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color: rgb(250, 214, 255);"></stop>
-                            <stop offset="100%" style="stop-color: rgb(133, 208, 255);"></stop>
+                            <stop offset="0%" style="stop-color: rgb(183, 240, 214);"></stop>
+                            <stop offset="100%" style="stop-color: rgb(251, 210, 152);"></stop>
                         </linearGradient>
                         </defs>
                         

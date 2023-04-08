@@ -4,7 +4,8 @@
     background-repeat:no-repeat;
     background-size: 36rem;
     background-position: center;
-    animation: background-position 10s ease-in-out infinite alternate;
+    animation: background-position 80s ease-in-out infinite alternate;
+    margin-top: 4rem;
 
     @keyframes background-position {
         0% { background-position: center 4rem; }
@@ -94,6 +95,7 @@
     #services{
         //overflow-x: hidden;
         background-size: 25rem;
+        margin-top: 0rem;
         .container{
             gap:1.1rem;
             grid-template-columns: 1fr 1fr;
@@ -144,8 +146,10 @@
 // PHONE AND SMALL DEVICES
 @media screen and (max-width:600px){
     #services{
+        margin-top: 3.1rem;
+        background-size: auto;
         background-repeat:space;
-        animation: background-position 10s ease-in-out infinite alternate;
+        animation: background-position 65s ease-in-out infinite alternate;
         @keyframes background-position {
             0% { background-position: center 3rem; }
             100% { background-position: center bottom; }
