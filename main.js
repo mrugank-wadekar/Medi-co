@@ -259,121 +259,36 @@ window.addEventListener('scroll', ()=> {
   }
 });
 
-//Auto scrolling Carousel Code from autoscroll.js
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
+    autoplay: {
+        delay: 2100,
+        disableOnInteraction: false,
+      },
 
-//
-//   Variables
-//
-//////////////////////////////////////////////////////////////////////
-
-// Play with this value to change the speed
-let tickerSpeed = 0.64;
-
-let flickity = null;
-let isPaused = false;
-const slideshowEl = document.querySelector('.js-slideshow');
-
-
-//
-//   Functions
-//
-//////////////////////////////////////////////////////////////////////
-
-const update = () => {
-  if (isPaused) return;
-  if (flickity.slides) {
-    flickity.x = (flickity.x - tickerSpeed) % flickity.slideableWidth;
-    flickity.selectedIndex = flickity.dragEndRestingSelect();
-    flickity.updateSelectedSlide();
-    flickity.settle(flickity.x);
-  }
-  window.requestAnimationFrame(update);
-};
-
-const pause = () => {
-  isPaused = true;
-};
-
-const play = () => {
-  if (isPaused) {
-    isPaused = false;
-    window.requestAnimationFrame(update);
-  }
-};
-
-
-//
-//   Create Flickity
-//
-//////////////////////////////////////////////////////////////////////
-
-flickity = new Flickity(slideshowEl, {
-  autoPlay: false,
-  prevNextButtons: true,
-  pageDots: false,
-  draggable: true,
-  wrapAround: true,
-  selectedAttraction: 0.015,
-  friction: 0.25
-});
-flickity.x = 0;
-
-
-//
-//   Add Event Listeners
-//
-//////////////////////////////////////////////////////////////////////
-
-slideshowEl.addEventListener('mouseenter', pause, false);
-slideshowEl.addEventListener('focusin', pause, false);
-slideshowEl.addEventListener('mouseleave', play, false);
-slideshowEl.addEventListener('focusout', play, false);
-
-flickity.on('dragStart', () => {
-  isPaused = true;
-});
-
-
-//
-//   Start Ticker
-//
-//////////////////////////////////////////////////////////////////////
-
-update();
-
-
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 30,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-
-//     autoplay: {
-//         delay: 2100,
-//         disableOnInteraction: false,
-//       },
-
-//     //Responsive Breakpoints
-//     breakpoints :{
-//         //when window width is >= 600px (For Tablets)
-//         100:{
-//             slidesPerView:1
-//         },
+    //Responsive Breakpoints
+    breakpoints :{
+        //when window width is >= 600px (For Tablets)
+        100:{
+            slidesPerView:1
+        },
         
-//         600:{
-//             slidesPerView:2
-//         },
+        600:{
+            slidesPerView:2
+        },
 
-//         //when window width is >= 1024px
-//         1024: {
-//             slidesPerView:3
-//         }
-//     }
-//   });
+        //when window width is >= 1024px
+        1024: {
+            slidesPerView:3
+        }
+    }
+  });
 
 
 
