@@ -209,6 +209,44 @@ window.addEventListener("scroll",()=>{
 document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>50)
 })
 
+//change navbar color on scroll on that specific section
+const navbar = document.querySelector('nav');
+const servicesSection = document.querySelector('#services');
+const specialistsSection = document.querySelector('#specialists');
+const appointmentSection = document.querySelector('#appointment');
+
+//services section
+window.addEventListener('scroll', ()=> {
+  if (window.scrollY >= servicesSection.offsetTop - parseInt(getComputedStyle(servicesSection).marginTop) -65)  {
+    navbar.classList.add('nav-scroll-services');
+  } else {
+    navbar.classList.remove('nav-scroll-services');
+  }
+});
+
+//specialists section
+
+window.addEventListener('scroll', ()=> {
+  if (window.scrollY >= specialistsSection.offsetTop - parseInt(getComputedStyle(specialistsSection).marginTop) -60)  {
+    navbar.classList.add('nav-scroll-specialists');
+  } else {
+    navbar.classList.remove('nav-scroll-specialists');
+  }
+});
+
+//appointment section
+
+window.addEventListener('scroll', ()=> {
+  if (window.scrollY >= appointmentSection.offsetTop - parseInt(getComputedStyle(appointmentSection).marginTop) -8)  {
+    navbar.classList.add('nav-scroll-appointment');
+  } else {
+    navbar.classList.remove('nav-scroll-appointment');
+  }
+});
+
+
+
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,

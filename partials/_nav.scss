@@ -7,11 +7,13 @@ nav{
     place-items: center;
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
     @include gradientBackground();
+    //transition: background 10s ease;
 
 
     &.window-scroll{
         //navbar scroll color to white
         background: linear-gradient(rgb(229, 229, 229),rgb(214, 214, 214));
+        //transition: background 3s ease;
         
         .container{
             button{
@@ -19,9 +21,13 @@ nav{
             }
 
             a{
-                color: black;
+                color: rgb(86, 86, 86);
                 font-size: 1.01rem;
-                //font-weight: 450;
+                font-weight: 410;
+
+                &:hover{
+                    color: black;
+                }
             
 
             
@@ -36,6 +42,18 @@ nav{
             }
         }
         }
+    }
+
+    &.nav-scroll-services{
+        //transition: background 3s ease;
+        background: linear-gradient(135deg,rgb(239, 187, 241),rgb(235, 202, 247));
+    }
+    &.nav-scroll-specialists{
+        background: linear-gradient(-135deg,rgb(144, 184, 240),rgb(235, 202, 247));
+    }
+
+    &.nav-scroll-appointment{
+        background: linear-gradient(-135deg,rgb(58, 176, 245),rgb(235, 202, 247));
     }
 
 
@@ -90,7 +108,7 @@ nav{
     nav{
         &.window-scroll{
             //navbar scroll color to white
-            background: $white-color;
+            //background: $white-color;
             .container{
                     button{
                     color:$black-color;

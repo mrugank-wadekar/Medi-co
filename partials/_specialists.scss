@@ -149,7 +149,7 @@
         left: 20%;
         top:29%;
         transform: scale(2.4);
-        animation: move 26s ease-in-out infinite;
+        animation: move 40s ease-in-out infinite alternate;
         transform-origin: 50% 50%;
 
         @keyframes move {
@@ -214,16 +214,17 @@
             position: absolute;
             z-index: -2;
             transform: scale(1);
-            animation: move 22s ease-in-out infinite;
+            top:0.5rem;
+            animation: move 25s ease-in-out infinite alternate;
             transform-origin: 50% 50%;
     
             @keyframes move {
-                0%   { transform: scale(1.8)   translate(10px, -50px); }
-                38%  { transform: scale(1.2, 1.4) translate(20vw, 35vh) rotate(160deg); }
-                40%  { transform: scale(1.2, 1.4) translate(20vw, 35vh) rotate(160deg); }
-                78%  { transform: scale(1.6) translate(5vw, 55vh) rotate(-40deg); }
-                80%  { transform: scale(1.6) translate(5vw, 55vh) rotate(-40deg); }
-                100% { transform: scale(1.8)   translate(10px, -50px); }
+                0%   { transform: scale(1)   translate(-0.5rem, 1rem); }
+                38%  { transform: scale(0.8, 0.9) translate(-1rem, 80vh) rotate(160deg); }
+                40%  { transform: scale(0.8, 0.9) translate(-1rem, 80vh) rotate(160deg); }
+                78%  { transform: scale(0.9) translate(-2rem, 192vh) rotate(-40deg); }
+                80%  { transform: scale(0.9) translate(-2rem, 192vh) rotate(-40deg); }
+                100% { transform: scale(1)   translate(-0.5rem, 1rem); }
               }
         }
     }
