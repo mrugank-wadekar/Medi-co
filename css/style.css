@@ -297,6 +297,21 @@ header .container .header__content p {
     text-align: center;
   }
 }
+#services {
+  background: url("../assets/blob3.svg");
+  background-repeat: no-repeat;
+  background-size: 36rem;
+  background-position: center;
+  animation: background-position 10s ease-in-out infinite alternate;
+}
+@keyframes background-position {
+  0% {
+    background-position: center 4rem;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
 #services .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -370,7 +385,7 @@ header .container .header__content p {
 
 @media screen and (max-width: 1024px) {
   #services {
-    overflow-x: hidden;
+    background-size: 25rem;
   }
   #services .container {
     gap: 1.1rem;
@@ -418,11 +433,19 @@ header .container .header__content p {
 }
 @media screen and (max-width: 600px) {
   #services {
-    overflow-y: hidden;
+    background-repeat: space;
+    animation: background-position 10s ease-in-out infinite alternate;
+  }
+  @keyframes background-position {
+    0% {
+      background-position: center 3rem;
+    }
+    100% {
+      background-position: center bottom;
+    }
   }
   #services .container {
     grid-template-columns: 1fr;
-    overflow-y: hidden;
   }
   #services .container article div h4 {
     margin-bottom: 0.8rem;
@@ -460,6 +483,33 @@ header .container .header__content p {
 #specialists {
   position: relative;
   height: 100%;
+  background: url("../assets/blob2.svg");
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-position: center;
+  animation: background-position 55s ease-in-out infinite alternate;
+}
+@keyframes background-position {
+  0% {
+    background-position: 50% 10%;
+    background-size: 30rem;
+  }
+  25% {
+    background-position: 50% 25%;
+    background-size: 32rem;
+  }
+  50% {
+    background-position: 80% 80%;
+    background-size: 33rem;
+  }
+  75% {
+    background-position: 25% 75%;
+    background-size: 32.5rem;
+  }
+  100% {
+    background-position: 50% 50%;
+    background-size: 30.5rem;
+  }
 }
 #specialists .container {
   width: 68%;
@@ -604,7 +654,29 @@ header .container .header__content p {
 
 @media screen and (max-width: 1024px) {
   #specialists {
-    overflow-x: hidden;
+    animation: background-position 35s ease-in-out infinite alternate;
+  }
+  @keyframes background-position {
+    0% {
+      background-position: 50% 10%;
+      background-size: 38rem;
+    }
+    25% {
+      background-position: 50% 25%;
+      background-size: 40rem;
+    }
+    50% {
+      background-position: 80% 80%;
+      background-size: 41rem;
+    }
+    75% {
+      background-position: 25% 75%;
+      background-size: 40.5rem;
+    }
+    100% {
+      background-position: 50% 50%;
+      background-size: 38.5rem;
+    }
   }
   #specialists .container {
     grid-template-columns: repeat(2, 1fr);
@@ -618,7 +690,30 @@ header .container .header__content p {
 }
 @media screen and (max-width: 600px) {
   #specialists {
-    overflow: hidden;
+    background-repeat: space;
+    animation: background-position 65s ease-in-out infinite alternate;
+  }
+  @keyframes background-position {
+    0% {
+      background-position: 50% 25%;
+      background-size: 30rem;
+    }
+    25% {
+      background-position: 50% 25%;
+      background-size: 32rem;
+    }
+    50% {
+      background-position: 80% 80%;
+      background-size: 33rem;
+    }
+    75% {
+      background-position: 35% 75%;
+      background-size: 32.5rem;
+    }
+    100% {
+      background-position: 40% 40%;
+      background-size: 30.5rem;
+    }
   }
   #specialists .container {
     grid-template-columns: 1fr;

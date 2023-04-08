@@ -1,5 +1,16 @@
 #services {
 
+    background: url('../assets/blob3.svg');
+    background-repeat:no-repeat;
+    background-size: 36rem;
+    background-position: center;
+    animation: background-position 10s ease-in-out infinite alternate;
+
+    @keyframes background-position {
+        0% { background-position: center 4rem; }
+        100% { background-position: center bottom; }
+      }
+
     .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -81,7 +92,8 @@
 // TAB AND MEDIUM DEVICES
 @media screen and (max-width:1024px){
     #services{
-        overflow-x: hidden;
+        //overflow-x: hidden;
+        background-size: 25rem;
         .container{
             gap:1.1rem;
             grid-template-columns: 1fr 1fr;
@@ -132,11 +144,17 @@
 // PHONE AND SMALL DEVICES
 @media screen and (max-width:600px){
     #services{
+        background-repeat:space;
+        animation: background-position 10s ease-in-out infinite alternate;
+        @keyframes background-position {
+            0% { background-position: center 3rem; }
+            100% { background-position: center bottom; }
+          }
         //overflow: hidden;
-        overflow-y: hidden;
+        //overflow-y: hidden;
         .container{
             grid-template-columns: 1fr;
-            overflow-y: hidden;
+            //overflow-y: hidden;
 
             article{
                 div{
