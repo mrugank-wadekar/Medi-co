@@ -13,4 +13,4 @@ https://mrugank-wadekar.github.io/Medi-co/
 
 
 
-<img src="readme/sc1.png" height="4642"  width="1345">
+<img src="readme/sc1.png" height="5642"  width="1345">
