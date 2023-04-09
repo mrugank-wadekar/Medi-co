@@ -30,12 +30,12 @@ if (window.innerWidth < 1024) {
 //Typewriter effect for header
   const typed = new Typed('#type-effect', {
     strings: ['You','Your Family','Your Employees',' Everyone !^4500'],
-    typeSpeed: 44,
+    typeSpeed: 50,
     backSpeed: 42,
-
+    startDelay: 950,
     fadeOut: true,
     fadeOutClass: 'typed-fade-out',
-    fadeOutDelay: 200,
+    fadeOutDelay: 380,
     loop:true,
     loopCount: Infinity,
 
